@@ -58,5 +58,5 @@ This project is licensed under the **MIT License**.
 
 ---
 
-Made with ❤️ by My Friend not my project(I just modify)
-All Credits goes to my friend
+Made with ❤️ by **My Friend** not my project(I just modify) 
+All Credits goes to **My Friend**
