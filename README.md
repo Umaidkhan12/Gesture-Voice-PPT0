@@ -60,7 +60,7 @@ This project is licensed under the **MIT License**.
 ## Troubleshooting
 - If the camera feed doesn't show, check your webcam permissions.
 - If voice recognition isn't working, ensure your microphone is enabled and properly set up.
-- If PowerPoint doesn’t open, verify the `ppt_path` is correct.
+- If PowerPoint doesn’t open, verify the ` ppt_path ` is correct.
 
 ---
 
