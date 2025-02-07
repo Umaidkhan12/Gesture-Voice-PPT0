@@ -8,6 +8,11 @@ This project allows you to control a PowerPoint presentation using **hand gestur
 ✔️ **Real-time Webcam Feed**  
 ✔️ **Smooth Integration with Microsoft PowerPoint**  
 
+## 📌 Prerequisites  
+- Python 3.7+
+- Webcam
+- Microsoft PowerPoint (Installed)  
+
 ## 🛠️ Installation  
 
 ### **1. Clone the Repository**  
@@ -32,6 +37,7 @@ python app.py
 |---------|--------|
 | ✋ Open Palm | Next Slide |
 | 👍 Thumbs Up | Previous Slide |
+| ✌️ Shape with Fingers | Activate Voice Control |
 
 ## 🎤 Voice Commands  
 | Command | Action |
@@ -42,11 +48,6 @@ python app.py
 | "Stop" | Stop Slideshow |
 | "Close" | Exit PowerPoint |
 
-## 📌 Requirements  
-- Python 3.7+
-- Webcam
-- Microsoft PowerPoint (Installed)
-
 ## 📸 Demo  
 ![Demo Image](https://your-demo-image-link.png)  
 
@@ -55,6 +56,11 @@ Pull requests are welcome! If you have suggestions, feel free to open an issue.
 
 ## 📜 License  
 This project is licensed under the **MIT License**.  
+
+## Troubleshooting
+- If the camera feed doesn't show, check your webcam permissions.
+- If voice recognition isn't working, ensure your microphone is enabled and properly set up.
+- If PowerPoint doesn’t open, verify the `ppt_path` is correct.
 
 ---
 

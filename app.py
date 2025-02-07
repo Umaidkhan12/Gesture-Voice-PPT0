@@ -117,6 +117,10 @@ while True:
                 print("Previous Slide")
                 buttonPressed = True
                 Presentation.SlideShowWindow.View.Previous()
+            elif fingers == [0, 1, 1, 0, 0]:  # "V" shape with fingers → Activate voice control
+                print("Voice Control Activated")
+                speak("Voice control activated")
+                controlPpt()
 
     if buttonPressed:
         counter += 1
@@ -127,9 +131,6 @@ while True:
     cv2.imshow("Gesture Control", img)
 
     key = cv2.waitKey(1)
-
-    if key == ord('v'):  # Press 'v' to activate voice control
-        controlPpt()  # Call voice control function
 
     if key == ord('q'):  # Press 'q' to quit
         break
