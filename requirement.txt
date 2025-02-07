@@ -1,0 +1,10 @@
+opencv-python
+pyttsx3
+SpeechRecognition
+keyboard
+pywin32
+numpy
+cvzone
+mediapipe
+aspose.slides
+aspose.pydrawing
