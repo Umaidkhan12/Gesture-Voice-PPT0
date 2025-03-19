@@ -9,8 +9,21 @@ import os
 import aspose.slides as slides
 import aspose.pydrawing as drawing
 
+# Define PowerPoint file name
+ppt_filename = "Onion Routing.pptx"
+
+# Try absolute path first
+ppt_path = os.path.abspath(ppt_filename)
+
+# If file is not found in the current directory, check home directory
+if not os.path.exists(ppt_path):
+    ppt_path = os.path.expanduser(f"~/{ppt_filename}")
+
+# Final check: If file doesn't exist, raise an error
+if not os.path.exists(ppt_path):
+    raise FileNotFoundError(f"PowerPoint file not found at {ppt_path}")
+
 # Initialize PowerPoint
-ppt_path = "C:\\Users\\Umaid khan\\OneDrive\\Desktop\\SIES Nerul\\Onion Routing.pptx"  # Change this to your file path
 Application = win32com.client.Dispatch("PowerPoint.Application")
 Presentation = Application.Presentations.Open(ppt_path)
 Presentation.SlideShowSettings.Run()
